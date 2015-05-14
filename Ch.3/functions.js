@@ -30,5 +30,13 @@ var area = (function(){
 	return width * height;
 }());
 
+//the final paranthesis above () after the closing curly brace of the code tells the interpreter to call the function immediately.
+//When to use IIFE and anonymous function expressions are used. They are used for code that only needs to run once within a task,
+//rather than repeatedly being called by other parts of the script. For example:
+//1. As an argument when a function is called
+//2. To assign the value of a property to an object
+//3. In event handlers and listeners, to perform a task when an event occurs
+//4. To prevent conflicts between two scripts that might use the same names
+
 
 
