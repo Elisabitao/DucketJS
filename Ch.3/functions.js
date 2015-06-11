@@ -52,6 +52,51 @@ var hotel = {
 	}
 }
 
+//creating objects using constructor syntax
+
+var hotel = new Object();
+
+hotel.name = "Park";
+hotel.rooms = 120;
+hotel.checkAvailability = function(){
+	return this.rooms;
+};
+
+var elName = document.getElementById("hotelname");
+elName.textContent = hotel.name;
+
+
+
+//another way of create and accessing objects constructor notation
+
+function Hotel(name, rooms, booked){
+	this.name = name;
+	this.rooms = rooms;
+	this.booked = booked;
+	
+	this.checkAvailability = function(){
+		return this.rooms - this.booked;
+	};
+}
+
+var quayHotel = new Hotel('Quay', 40, 25);
+var parkHotel = new Hotel("Park", 120, 77);
+
+var details1 = quayHotel.name + 'rooms: ';
+		details += quayHotel.checkAvailibility();
+		
+var elHotel = document.getElementById("hotel");
+elHostel.textContent = details; 
+
+//this keyword. if function is declared on global scope, this refers to window. example below:
+
+function windowSize(){
+	var width = this.innerWidth;
+	var height = this.innerHeight;
+	
+	return [width, height];
+}
+
 
 
 
