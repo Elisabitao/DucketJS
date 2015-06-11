@@ -38,5 +38,38 @@ var area = (function(){
 //3. In event handlers and listeners, to perform a task when an event occurs
 //4. To prevent conflicts between two scripts that might use the same names
 
+//example of first object in this book:
+
+var hotel = {
+	name: 'Quay',
+	rooms: 40,
+	booked: 25,
+	gym: true,
+	roomTypes: ['twin', 'double', 'suite'],
+
+	checkAvailability : function() {
+		return this.rooms - this.booked;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
