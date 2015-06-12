@@ -97,6 +97,39 @@ function windowSize(){
 	return [width, height];
 }
 
+//global variables. all global variables also becomem properties of the window object, so when a function is in the global context, you can access global properties using the window object.
+
+var width = 600;
+
+var showWidth = function(){
+	document.write(this.width);
+}
+
+showWidth(); //600
+
+//when a function is defined inside an object, it becomes a method. in a method, this refers to the containing object.
+
+//If a named function has been defined in global scope, and it is then used as a method of an object, this refers to the object is is contained within. Example below:
+
+
+var width = 600;
+var shape = {width: 300};
+
+var showWidth = function(){
+	return this.width;
+};
+
+shape.getWidth = showWidth; //we add the showWidth function as a method to the shape object created above
+
+shape.getWidth(); //this now returns 300
+
+//Three groups of built-in js objects:
+//1. Browser object model:
+// - Window
+//   -- Document, History, Location, Navigator, Screen
+
+//2. DOM - creates a model of the web page
+//3 Global js objects. Strings, number, boolean, date, math, regex
 
 
 
