@@ -145,6 +145,20 @@ msg += "<h2> 3 digits</h2><p>" + originalNumber.toPrecision(3) + '</p>;
 var el = document.getElementById("info");
 el.innerHTML = msg; 
 
+Global objects: Math Object
+
+Property:
+
+Math.PI //returns pi
+
+Method:
+
+Math.round() // Round to nearest int
+Math.sqrt(n) // Return square root of positive number
+Math.ceil() // Round number up to nearest int
+Math.floor() // Round number down to nearest int
+Math.random() // Generate random number from 0 to 1 
+
 
 
 
