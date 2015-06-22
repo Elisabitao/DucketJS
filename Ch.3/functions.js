@@ -135,38 +135,43 @@ shape.getWidth(); //this now returns 300
 
 
 //working with decimal numbers
+// 
+// var originalNumber = 10.23456;
+// 
+// var msg = '<h2> origin number</h2><p>' + originalNumber + '</p>';
+// msg += "<h2> 3 decimal places </h2><p>" + originalNumber.toFixed(3); + '</p>';
+// msg += "<h2> 3 digits</h2><p>" + originalNumber.toPrecision(3) + '</p>;
+// 
+// var el = document.getElementById("info");
+// el.innerHTML = msg; 
+// 
+// Global objects: Math Object
+// 
+// Property:
+// 
+// Math.PI //returns pi
+// 
+// Method:
+// 
+// Math.round() // Round to nearest int
+// Math.sqrt(n) // Return square root of positive number
+// Math.ceil() // Round number up to nearest int
+// Math.floor() // Round number down to nearest int
+// Math.random() // Generate random number from 0 to 1 
 
-var originalNumber = 10.23456;
+var today = new Date();
 
-var msg = '<h2> origin number</h2><p>' + originalNumber + '</p>';
-msg += "<h2> 3 decimal places </h2><p>" + originalNumber.toFixed(3); + '</p>';
-msg += "<h2> 3 digits</h2><p>" + originalNumber.toPrecision(3) + '</p>;
-
-var el = document.getElementById("info");
-el.innerHTML = msg; 
-
-Global objects: Math Object
-
-Property:
-
-Math.PI //returns pi
-
-Method:
-
-Math.round() // Round to nearest int
-Math.sqrt(n) // Return square root of positive number
-Math.ceil() // Round number up to nearest int
-Math.floor() // Round number down to nearest int
-Math.random() // Generate random number from 0 to 1 
-
-
-
-
-
-
-
+//creating instance of Date object then working with it. By default, when a Date object is created, it will hold the date it was created. If want it to store another date,
+//you must explicitly specify the date and time we'd like it to hold 
 
 
+var dob = new Date(1996, 11, 26, 15, 45, 55);
+
+var today = new Date();
+var year = today.getFullYear();
+
+var el = document.getElementById('date');
+el.innerHTML = year;
 
 
 
