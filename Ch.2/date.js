@@ -12,4 +12,4 @@ if (hourNow > 18) {
 	greeting = 'Welcome';
 }
 
-document.write(greeting);`
+document.write(greeting);
